@@ -1,0 +1,98 @@
+/* MAIN */
+main{
+    
+    margin: 0 auto;
+    width: 95%;
+}
+.card{
+    margin: 10px;
+    background-color: white;
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgb(49, 49, 49);
+}
+.card-content{
+    border-top: 1px solid var(--color-grisClaro);
+    padding: 15px;
+    position: relative;
+    
+}
+.card .card-content h6{
+    display: none;
+    
+}
+.card .card-content .icono-camion{
+    border: 1px solid var(--color-verde);
+    border-radius: 50%;
+    padding: 10px;
+    width: fit-content;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    font-size: 15px;
+    transition: all 1s;
+    background-color: white;
+}
+.card .card-content .icono-camion:hover{
+    transform: rotateZ(-90deg);
+}
+
+.card .card-content .icono-camion i{
+    color: var(--color-verde);
+}
+.card .card-content .product-info{
+    display: flex;
+    align-items: flex-end;
+}
+.card .card-content .product-info p:nth-child(1){
+    flex-grow: .3;
+}
+.card .card-content .product-info p:nth-child(2){
+    flex-grow: .7;
+    color: var(--color-verde);
+    font-size: 14px;
+}
+.card .card-content .product-name{
+    color: var(--color-grisOscuro);
+    font-size: 15px;
+}
+/* section */
+.section-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section-title{
+    width: 100%;
+}
+
+/* MEDIA QUERIES */
+/*tablet*/
+@media screen and (min-width: 361px){
+    .card .card-content h6{
+        display: block;
+    }
+    .card{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+
+    }
+    nav{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+/*desktop*/
+@media (min-width: 768px) {
+    .card{
+        width: 21%;
+    }
+    .logo img{
+        width: 50%;
+        padding: 10px;
+        margin-bottom:15px;
+    }
+}
